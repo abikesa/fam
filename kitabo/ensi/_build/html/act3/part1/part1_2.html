@@ -516,8 +516,8 @@ document.write(`
 <style>
 .float-left {
     float: left;
-    width: 35%; /* Increased width */
-    max-width: 500px; /* Allow a wider layout */
+    width: 45%; /* Increase width for better fit */
+    max-width: 500px; /* Allows expansion */
     height: auto;
     margin-right: 15px;
     border: 1px solid #ccc;
@@ -525,24 +525,25 @@ document.write(`
     text-align: center;
     font-size: 12px;
     background-color: #f9f9f9;
-    overflow: hidden; /* Prevents excessive gaps */
-    padding-bottom: 20px; /* Adds spacing below the entire box */
+    overflow: hidden;
+    padding-bottom: 20px; /* Extra spacing below */
 }
 
 .float-left p {
     text-align: left;
     font-size: 12px;
-    margin: 10px 0; /* Adds more spacing between paragraphs */
+    margin: 10px 0;
 }
 
 .responsive-img {
-    width: 100%; /* Ensures full width */
-    height: auto; /* Maintains aspect ratio */
-    max-height: 400px; /* Controls height */
+    max-height: 400px; /* Control height */
+    max-width: none; /* Override previous constraints */
+    width: auto; /* Let the image scale naturally */
+    height: 100%; /* Ensure full height fit */
     display: block;
-    object-fit: cover; /* Fills the container better */
+    object-fit: contain; /* Prevents distortion */
     transform: rotate(90deg);
-    margin-bottom: 40px; /* Space between image and footnotes */
+    margin: auto; /* Centers image properly */
 }
 </style>
 
@@ -553,6 +554,7 @@ document.write(`
     </div>
     <p>Visualization of dendritic structures, evoking parallels with neural networks, tree branches, and respiratory bronchioles.</p>
 </div>
+
 <p>Across diverse domains of biology and computation, branching structures appear as a universal design principle. From the fractal-like bifurcations of trees to the dendritic networks of neurons, and even the bronchioles within the lungs, nature employs efficient, scalable, and self-similar architectures to optimize function. These structures facilitate rapid information transfer, efficient oxygen distribution, and recursive connectivity—echoing similar principles in artificial neural networks and computational models. This shared geometry underscores the fundamental economy of nature, where optimal design principles are preserved across scales, from micro to macro systems.</p>
 <p>The central figure of <em>The Tempest</em>, Prospero, is, first and foremost, a ruler—a deposed Duke of Milan who must reclaim a form of sovereignty, even if only on an island governed by his will. His story is not just one of revenge or reconciliation, but of governance: how power is wielded, how it is lost, and how it might be restored. This is the same thematic territory as Shakespeare’s histories, from <em>Richard II</em> to <em>Henry IV</em> to <em>Hamlet</em>, all of which revolve around the fragility of political order and the legitimacy of rulers. What sets <em>The Tempest</em> apart is that it is, in a sense, a final reflection on these concerns—one that acknowledges the artifice of rulership itself. Prospero, in abandoning his magical powers, enacts the ultimate gesture of a ruler who steps away from dominion, echoing the abdications, depositions, and reluctant successions that define Shakespeare’s history plays.</p>
 <style>
