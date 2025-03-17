@@ -545,6 +545,13 @@ document.write(`
     transform: rotate(90deg);
     margin: auto; /* Centers image properly */
 }
+
+.float-left::after {
+    content: "";
+    display: block;
+    height: 20px; /* Adjust height as needed */
+}
+
 </style>
 
 <div class="float-left">
