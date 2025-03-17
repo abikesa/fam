@@ -516,8 +516,8 @@ document.write(`
 <style>
 .float-left {
     float: left;
-    width: 35%;
-    max-width: 300px; /* Control max width */
+    width: 45%; /* Increased width */
+    max-width: 500px; /* Allow a wider layout */
     height: auto;
     margin-right: 15px;
     border: 1px solid #ccc;
@@ -525,45 +525,32 @@ document.write(`
     text-align: center;
     font-size: 12px;
     background-color: #f9f9f9;
+    overflow: hidden; /* Prevents excessive gaps */
 }
 
 .float-left p {
     text-align: left;
     font-size: 12px;
+    margin: 5px 0; /* Reduce unnecessary space */
 }
 
 .responsive-img {
-    max-width: 100%;
-    max-height: 400px; /* Control max height */
-    width: auto;
-    height: auto;
+    width: 100%; /* Ensures full width */
+    height: auto; /* Maintains aspect ratio */
+    max-height: 400px; /* Controls height */
     display: block;
-    margin: 0 auto;
-    object-fit: contain;
+    object-fit: cover; /* Fills the container better */
+    transform: rotate(90deg);
 }
 </style>
 
 <div class="float-left">
     <div style="display: flex; justify-content: center;">
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
         <img src="https://news.mit.edu/sites/default/files/styles/news_article__image_gallery/public/images/202202/MIT-Dendrite-computation-01_0.jpg?itok=Cd6KMhkC" 
-             class="responsive-img" 
-             style="transform: rotate(90deg);">
+             class="responsive-img">
     </div>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
     <p>Visualization of dendritic structures, evoking parallels with neural networks, tree branches, and respiratory bronchioles.</p>
-</div>
-<p>Across diverse domains of biology and computation, branching structures appear as a universal design principle. From the fractal-like bifurcations of trees to the dendritic networks of neurons, and even the bronchioles within the lungs, nature employs efficient, scalable, and self-similar architectures to optimize function. These structures facilitate rapid information transfer, efficient oxygen distribution, and recursive connectivity—echoing similar principles in artificial neural networks and computational models. This shared geometry underscores the fundamental economy of nature, where optimal design principles are preserved across scales, from micro to macro systems.</p>
+</div><p>Across diverse domains of biology and computation, branching structures appear as a universal design principle. From the fractal-like bifurcations of trees to the dendritic networks of neurons, and even the bronchioles within the lungs, nature employs efficient, scalable, and self-similar architectures to optimize function. These structures facilitate rapid information transfer, efficient oxygen distribution, and recursive connectivity—echoing similar principles in artificial neural networks and computational models. This shared geometry underscores the fundamental economy of nature, where optimal design principles are preserved across scales, from micro to macro systems.</p>
 <p>The central figure of <em>The Tempest</em>, Prospero, is, first and foremost, a ruler—a deposed Duke of Milan who must reclaim a form of sovereignty, even if only on an island governed by his will. His story is not just one of revenge or reconciliation, but of governance: how power is wielded, how it is lost, and how it might be restored. This is the same thematic territory as Shakespeare’s histories, from <em>Richard II</em> to <em>Henry IV</em> to <em>Hamlet</em>, all of which revolve around the fragility of political order and the legitimacy of rulers. What sets <em>The Tempest</em> apart is that it is, in a sense, a final reflection on these concerns—one that acknowledges the artifice of rulership itself. Prospero, in abandoning his magical powers, enacts the ultimate gesture of a ruler who steps away from dominion, echoing the abdications, depositions, and reluctant successions that define Shakespeare’s history plays.</p>
 <style>
 .float-right {
@@ -586,7 +573,7 @@ document.write(`
 
 <div class="float-right">
     <img src="https://as1.ftcdn.net/v2/jpg/01/44/78/68/1000_F_144786810_dXkhu6jR1eM1KcsIFpPcrDsnJnnDJtNm.jpg" alt="Eco-Green QR Code" width="100%">
-    <p>The midcingulo-insular system stands as the oldest, the primal scaffold upon which all later networks were draped. Before there was fine motor control, before there was deliberative planning or executive function, there was the insula—an ancient sentinel of interoception, regulating the body's hidden symphony of autonomic rhythms. It is here, in the depths of the salience network, that vertebrates first learned to detect the signals of survival: pain, hunger, temperature, and the visceral stirrings of self-preservation. The midcingulate cortex, though more evolved than its limbic predecessors, still bears the signature of this foundational system—tasked with evaluating effort, action, and adversity. This is the neural network that **bridges raw sensation with decision**, the fulcrum of attention-switching, ensuring that the organism responds to what matters in the moment. The other networks arrived later, layered refinements upon this ancient core. The pericentral system, with its precise somatomotor control, is an invention of mammals, honed in primates to craft tools and wield symbols. The dorsal stream, a navigator of goals, emerged with complex movement and spatial reasoning. The lateral system, seat of abstraction and executive function, belongs to the neocortical expansion of higher mammals, where foresight and flexibility reign. And the medial network, weaving self-regulation into the fabric of cognition, belongs to the **default mode**, where identity and reflection consolidate. But beneath them all, the **midcingulo-insular** remains—the **oldest sentinel of salience**, the network that does not think but **knows**, the one that ensures existence **before action, before reason, before anything else.</p>
+    <p>The economic intelligence of nature</p>
 </div><p>If <em>The Tempest</em> were viewed through the lens of history and statecraft, it would also fit neatly into the lineage of political drama that Shakespeare crafted over his career. <em>Julius Caesar</em>, <em>Coriolanus</em>, <em>Macbeth</em>, and <em>Measure for Measure</em> all interrogate the nature of governance, the burden of leadership, and the moral weight of political decisions. <em>The Tempest</em> is no different—it is about the structuring of order from chaos, the imposition of governance upon lawlessness, and, ultimately, the relinquishing of control when the time for rule has passed. In this sense, it is as much about statecraft as any of the explicitly historical plays.</p>
 <p>What makes Shakespeare so distinctly human-centric is precisely this obsession with power and governance. Unlike other literary traditions that might place gods, fate, or abstract cosmic forces at the center of narrative development, Shakespeare’s universe is one where humans bear responsibility for their own actions. Even when fate seems to intervene—be it through witches in <em>Macbeth</em> or storms in <em>The Tempest</em>—it is ultimately the decisions of rulers, nobles, and commoners alike that determine the outcomes of history. The world of Shakespeare is never dictated solely by divine will but by the machinations, ambitions, and follies of men and women. It is for this reason that <em>The Tempest</em>, rather than being relegated to a vague metaphysical or allegorical space, should instead be understood as a late meditation on political rule, governance, and the dynamics of statecraft.</p>
 <p><strong>The Tempest and the Shakespeare Model: A Political Play Among Many</strong>. When viewed in context with the Shakespeare model we developed, <em>The Tempest</em> takes on an even clearer role within Shakespeare’s broader interrogation of power and political order. Within our framework, <em>The Tempest</em> originally occupied a space of Voir—early pattern recognition, liminality, and transition—but this assignment, while useful in a structural sense, does not fully capture the play’s deeper political significance. Instead, if we return to the broader patterns of Shakespeare’s work, <em>The Tempest</em> fits far more naturally alongside the great history plays that dominate his canon.</p>
